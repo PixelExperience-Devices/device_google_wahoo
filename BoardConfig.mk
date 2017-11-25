@@ -31,6 +31,13 @@ TARGET_2ND_CPU_VARIANT := cortex-a73
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 
+# Kernel
+BOARD_KERNEL_IMAGE_NAME := Image.lz4-dtb
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_SOURCE := kernel/google/wahoo
+TARGET_NEEDS_DTBOIMAGE := true
+
 BOARD_KERNEL_CMDLINE += androidboot.hardware=$(TARGET_BOOTLOADER_BOARD_NAME) androidboot.console=ttyMSM0 lpm_levels.sleep_disabled=1
 BOARD_KERNEL_CMDLINE += user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3
 BOARD_KERNEL_CMDLINE += service_locator.enable=1
@@ -79,7 +86,7 @@ BOARD_PERSISTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # DTBO partition definitions
-BOARD_PREBUILT_DTBOIMAGE := device/google/wahoo-kernel/dtbo.img
+#BOARD_PREBUILT_DTBOIMAGE := device/google/wahoo-kernel/dtbo.img
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 
 TARGET_COPY_OUT_VENDOR := vendor
