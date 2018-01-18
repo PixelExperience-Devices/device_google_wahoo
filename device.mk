@@ -391,6 +391,11 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.widevine \
     move_widevine_data.sh
 
+# IMS
+PRODUCT_PACKAGES += \
+    PresencePolling \
+    RcsService
+
 # NFC packages
 PRODUCT_PACKAGES += \
     NfcNci \
