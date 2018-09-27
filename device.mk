@@ -397,6 +397,10 @@ PRODUCT_PACKAGES += \
     Tag \
     android.hardware.nfc@1.1-service \
 
+# Shared java libs
+PRODUCT_PACKAGES += \
+    com.android.nfc_extras
+
 PRODUCT_PACKAGES += \
     SecureElement
 
