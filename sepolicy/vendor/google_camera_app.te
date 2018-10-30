@@ -33,6 +33,9 @@ allow google_camera_app qdsp_device:chr_file { r_file_perms };
 # cropping or taking user photos.
 allow google_camera_app system_app_data_file:file { read write getattr };
 
+allow google_camera_app easel_device:chr_file x_file_perms;
+allow google_camera_app proc_stat:file r_file_perms;
+
 # Allow GoogleCamera access to necessary vendor libraries to execute
 # Halide code
 typeattribute google_camera_app system_executes_vendor_violators;
