@@ -133,6 +133,17 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_verifier
 
+# Build necessary packages for vendor
+PRODUCT_PACKAGES += \
+    chre \
+    ese-ls-provision \
+    ese-replay \
+    libhidltransport.vendor \
+    libhwbinder.vendor \
+    libjson \
+    libsensorndkbridge:32 \
+    libtinyxml
+
 PRODUCT_PACKAGES += \
     bootctrl.msm8998 \
     bootctrl.msm8998.recovery
@@ -221,6 +232,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.fluence.voicerec=false \
     ro.config.vc_call_vol_steps=7 \
     ro.config.media_vol_steps=25
+
+# Enable missing vendor props
+PRODUCT_PROPERTY_OVERRIDES += \
+    drm.service.enabled=true \
+    media.mediadrmservice.enable=true \
+    ro.gfx.driver.0=com.google.pixel.wahoo.gfxdrv \
+    ro.hardware.egl=adreno \
+    ro.hardware.vulkan=adreno \
+    ro.oem_unlock.pst=/dev/block/platform/soc/1da4000.ufshc/by-name/misc \
+    ro.oem_unlock.pst_offset=6144
 
 # graphics
 PRODUCT_PROPERTY_OVERRIDES += \
