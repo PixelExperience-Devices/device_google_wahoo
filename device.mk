@@ -33,9 +33,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true
 
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.adb.secure=1
-
 PRODUCT_SOONG_NAMESPACES += \
     device/google/wahoo \
     vendor/google/camera \
