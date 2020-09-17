@@ -26,6 +26,10 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 endif
 PRODUCT_ACTIONABLE_COMPATIBLE_PROPERTY_DISABLE := true
 
+PRODUCT_PACKAGES += \
+    netutils-wrapper-1.0 \
+    vndk_package
+
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true
 
