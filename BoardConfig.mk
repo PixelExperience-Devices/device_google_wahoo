@@ -30,6 +30,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a73
 
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
 
 # Inline kernel building configs
 TARGET_KERNEL_SOURCE := kernel/google/wahoo
