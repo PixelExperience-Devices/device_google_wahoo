@@ -72,7 +72,7 @@ BOARD_USES_METADATA_PARTITION := true
 
 # Partitions (listed in the file) to be wiped under recovery.
 TARGET_RECOVERY_WIPE := device/google/wahoo/recovery.wipe
-TARGET_RECOVERY_FSTAB := device/google/wahoo/fstab.hardware
+TARGET_RECOVERY_FSTAB := device/google/wahoo/rootdir/etc/fstab.hardware
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
