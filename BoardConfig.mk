@@ -33,7 +33,7 @@ BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
 
 # Inline kernel building configs
-TARGET_KERNEL_SOURCE := kernel/google/wahoo
+TARGET_KERNEL_SOURCE := kernel/google/xenial
 TARGET_KERNEL_CONFIG := xenial_defconfig
 TARGET_KERNEL_ARCH := arm64
 BOARD_KERNEL_IMAGE_NAME := Image.lz4-dtb
