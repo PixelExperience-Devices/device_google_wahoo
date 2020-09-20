@@ -609,7 +609,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 PRODUCT_COPY_FILES += \
-    device/google/wahoo/fstab.hardware:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.$(PRODUCT_HARDWARE)
+    device/google/wahoo/rootdir/etc/fstab.hardware:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.$(PRODUCT_HARDWARE)
 
 # Use the default charger mode images
 PRODUCT_PACKAGES += \
@@ -720,7 +720,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.postinstall.fstab.prefix=/product
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/fstab.postinstall:$(TARGET_COPY_OUT_PRODUCT)/etc/fstab.postinstall
+    $(LOCAL_PATH)/rootdir/etc/fstab.postinstall:$(TARGET_COPY_OUT_PRODUCT)/etc/fstab.postinstall
 
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.charger.enable_suspend=true
