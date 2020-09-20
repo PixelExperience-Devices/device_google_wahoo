@@ -750,12 +750,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true \
     media.mediadrmservice.enable=true \
     ro.oem_unlock.pst_offset=6144 \
-    ro.oem_unlock.pst=/dev/block/platform/soc/1da4000.ufshc/by-name/misc \
-    ro.hardware.egl=adreno \
-    ro.gfx.driver.0=com.google.pixel.wahoo.gfxdrv
+    ro.oem_unlock.pst=/dev/block/platform/soc/1da4000.ufshc/by-name/misc
 
 PRODUCT_HOST_PACKAGES += \
     dtc
+
+# Graphics properties
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.gfx.angle.supported=true \
+    ro.hardware.egl=adreno \
+    ro.gfx.driver.0=com.google.pixel.wahoo.gfxdrv \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
 include hardware/google/pixel/vibrator/drv2624/device.mk
 include hardware/google/pixel/mm/device_legacy.mk
