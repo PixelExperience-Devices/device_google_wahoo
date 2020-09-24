@@ -747,6 +747,7 @@ PRODUCT_HOST_PACKAGES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.gfx.angle.supported=true \
     ro.hardware.egl=adreno \
+    ro.hardware.vulkan=adreno \
     ro.gfx.driver.0=com.google.pixel.wahoo.gfxdrv \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
