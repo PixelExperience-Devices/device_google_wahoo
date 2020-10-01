@@ -198,6 +198,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.power.stats@1.0-service.pixel
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # health HAL
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-service.wahoo
