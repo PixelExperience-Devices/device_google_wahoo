@@ -32,6 +32,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 #    ro.adb.secure=1
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/google/interfaces
+
 PRODUCT_SOONG_NAMESPACES += \
     device/google/wahoo \
     vendor/google/camera \
