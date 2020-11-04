@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+COMMON_PATH := device/google/wahoo
+
 TARGET_BOARD_PLATFORM := msm8998
 
 TARGET_ARCH := arm64
