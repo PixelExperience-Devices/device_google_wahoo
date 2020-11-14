@@ -27,3 +27,4 @@ dontaudit system_server self:capability sys_module;
 
 dontaudit system_server sysfs_msm_subsys:dir search;
 dontaudit system_server sysfs_msm_subsys:file r_file_perms;
+allow system_server app_zygote:process { getpgid };
