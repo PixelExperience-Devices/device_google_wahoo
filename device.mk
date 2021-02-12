@@ -770,6 +770,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.protected_contents=true
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.opa.eligible_device=true
 
+# Use Vulkan backend for Skia UI rendering
+PRODUCT_PRODUCT_PROPERTIES += \
+    debug.hwui.renderer=skiavk
+
 # Use /product/etc/fstab.postinstall to mount system_other.
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.postinstall.fstab.prefix=/product
