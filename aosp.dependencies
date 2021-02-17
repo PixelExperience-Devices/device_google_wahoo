@@ -1,0 +1,12 @@
+[
+   {
+     "repository": "kernel_google_wahoo",
+     "target_path": "kernel/google/wahoo"
+   },
+   {
+      "repository":"arter97/arm64-gcc",
+      "target_path":"prebuilts/gcc/linux-x86/aarch64/arm64-gcc",
+      "branch":"master",
+      "remote": "github"
+   }
+]
