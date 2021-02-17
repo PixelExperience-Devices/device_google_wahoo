@@ -768,6 +768,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ElmyraService
 
+# Now Playing
+PRODUCT_PACKAGES += \
+    NowPlayingOverlay
+
 include hardware/google/pixel/vibrator/drv2624/device.mk
 include hardware/google/pixel/mm/device_legacy.mk
 include hardware/google/pixel/thermal/device.mk
