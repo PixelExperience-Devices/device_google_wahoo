@@ -759,6 +759,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     NowPlayingOverlay
 
+# IORap app launch prefetching using Perfetto traces and madvise
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.iorapd.enable=true
+
 include hardware/google/pixel/vibrator/drv2624/device.mk
 include hardware/google/pixel/mm/device_legacy.mk
 include hardware/google/pixel/thermal/device.mk
