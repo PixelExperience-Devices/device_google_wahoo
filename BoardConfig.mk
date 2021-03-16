@@ -178,9 +178,6 @@ TARGET_HAS_WIDE_COLOR_DISPLAY := true
 TARGET_HAS_HDR_DISPLAY := true
 TARGET_USES_COLOR_METADATA := true
 
-# Charger Mode
-BOARD_CHARGER_ENABLE_SUSPEND := true
-
 # Vendor Interface Manifest
 DEVICE_MANIFEST_FILE := device/google/wahoo/manifest.xml
 DEVICE_MATRIX_FILE := device/google/wahoo/compatibility_matrix.xml
