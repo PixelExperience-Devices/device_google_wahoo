@@ -37,7 +37,7 @@ BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
 # Inline kernel building configs
 TARGET_KERNEL_CLANG_COMPILE := false
 TARGET_KERNEL_SOURCE := kernel/google/wahoo
-TARGET_KERNEL_CONFIG := xenial_defconfig
+TARGET_KERNEL_CONFIG := wahoo_defconfig
 TARGET_KERNEL_ARCH := arm64
 BOARD_KERNEL_IMAGE_NAME := Image.lz4-dtb
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-elf-
