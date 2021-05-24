@@ -727,10 +727,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.use_color_management=true
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.protected_contents=true
 
-# Use Vulkan backend for Skia UI rendering
-PRODUCT_PRODUCT_PROPERTIES += \
-    debug.hwui.renderer=skiavk
-
 # Use /product/etc/fstab.postinstall to mount system_other.
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.postinstall.fstab.prefix=/product
