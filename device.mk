@@ -215,13 +215,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.fluence.voicerec=false \
     ro.config.vc_call_vol_steps=7 \
     ro.config.media_vol_steps=25
-    
-# MaxxAudio effect and add rotation monitor
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.audio.monitorRotation=true
-
-PRODUCT_PACKAGES += \
-    libmalistener
 
 # graphics
 PRODUCT_PROPERTY_OVERRIDES += \
