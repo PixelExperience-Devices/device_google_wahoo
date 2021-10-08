@@ -723,9 +723,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.charger.enable_suspend=true
 
-# EUICC
+# Cgroup and task_profiles
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
+    $(LOCAL_PATH)/configs/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
+    $(LOCAL_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
 
 # Build necessary packages for vendor
 PRODUCT_PACKAGES += \
