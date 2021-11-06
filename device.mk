@@ -759,6 +759,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     NowPlayingOverlay
 
+# Shims
+PRODUCT_PACKAGES += \
+    lib-imsvtshim
+
 # IORap app launch prefetching using Perfetto traces and madvise
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.iorapd.enable=true
