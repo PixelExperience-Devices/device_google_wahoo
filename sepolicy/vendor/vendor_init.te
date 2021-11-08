@@ -33,6 +33,7 @@ set_prop(vendor_init, public_vendor_default_prop)
 set_prop(vendor_init, vendor_radio_prop)
 set_prop(vendor_init, vendor_thermal_prop)
 set_prop(vendor_init, vendor_charge_prop)
+set_prop(vendor_init, vendor_thermal_prop)
 
 dontaudit vendor_init unlabeled:dir getattr;
 dontaudit vendor_init unlabeled:file getattr;
@@ -44,3 +45,10 @@ allow vendor_init sysfs_touch:file w_file_perms;
 userdebug_or_eng(`
   set_prop(vendor_init, logpersistd_logging_prop)
 ')
+
+get_prop(vendor_init, tee_listener_prop)
+get_prop(vendor_init, post_boot_prop)
+get_prop(vendor_init, wc_prop)
+get_prop(vendor_init, atfwd_start_prop)
+get_prop(vendor_init, system_prop)
+get_prop(vendor_init, cnss_diag_prop)
