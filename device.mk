@@ -59,6 +59,8 @@ $(call inherit-product, device/google/wahoo/utils.mk)
 PRODUCT_CHARACTERISTICS := nosdcard
 PRODUCT_SHIPPING_API_LEVEL := 26
 
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 PRODUCT_COPY_FILES += \
