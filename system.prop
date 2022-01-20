@@ -70,3 +70,6 @@ persist.data.mode=concurrent
 # Soc
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=MSM8998
+
+# Hearing Aid Audio Support Using Bluetooth LE
+bluetooth.profile.asha.central=true
