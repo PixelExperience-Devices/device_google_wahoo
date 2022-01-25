@@ -489,7 +489,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@7.0-impl:32 \
     android.hardware.soundtrigger@2.2-impl:32 \
     android.hardware.bluetooth.a2dp@1.0.vendor \
-    android.hardware.bluetooth.audio@2.0-impl \
+    android.hardware.bluetooth.audio-impl \
     android.hardware.bluetooth.audio@2.1.vendor \
     android.hardware.audio@2.0-service \
     libldacBT_bco
