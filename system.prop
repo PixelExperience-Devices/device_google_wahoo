@@ -72,4 +72,4 @@ ro.soc.manufacturer=Qualcomm
 ro.soc.model=MSM8998
 
 # Hearing Aid Audio Support Using Bluetooth LE
-bluetooth.profile.asha.central=true
+bluetooth.profile.asha.central.enabled=true
