@@ -181,14 +181,4 @@ BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 BOARD_VNDK_VERSION := current
 
-# Board uses A/B OTA.
-AB_OTA_UPDATER := true
-
-AB_OTA_PARTITIONS += \
-    boot \
-    system \
-    vbmeta \
-    dtbo \
-    vendor
-
 BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
