@@ -171,13 +171,4 @@ TARGET_USES_MKE2FS := true
 
 BOARD_VNDK_VERSION := current
 
-# Board uses A/B OTA.
-AB_OTA_UPDATER := true
-
-AB_OTA_PARTITIONS += \
-    boot \
-    system \
-    vbmeta \
-    dtbo
-
 BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
