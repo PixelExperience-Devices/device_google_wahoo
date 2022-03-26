@@ -155,6 +155,10 @@ endif # PRODUCT_USE_DYNAMIC_PARTITIONS
 
 TARGET_COPY_OUT_VENDOR := vendor
 
+TARGET_COPY_OUT_PRODUCT := product
+
+TARGET_COPY_OUT_SYSTEM_EXT := system_ext
+
 # Install odex files into the other system image
 BOARD_USES_SYSTEM_OTHER_ODEX := true
 
