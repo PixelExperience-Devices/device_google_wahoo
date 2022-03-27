@@ -255,4 +255,11 @@ AB_OTA_PARTITIONS += \
     dtbo \
     vendor
 
+# Skip product and system_ext partition for nodap build
+ifeq ($(filter %_nodap,$(TARGET_PRODUCT)),)
+AB_OTA_PARTITIONS += \
+    product \
+    system_ext
+endif
+
 BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
