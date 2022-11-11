@@ -2,5 +2,11 @@
    {
      "repository": "kernel_google_wahoo",
      "target_path": "kernel/google/wahoo"
+   },
+   {
+      "repository": "ReallySnow/packages_apps_GoogleCamera",
+      "target_path": "packages/apps/GoogleCamera",
+      "branch": "thirteen",
+      "remote": "gitlab"
    }
 ]
