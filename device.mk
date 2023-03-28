@@ -193,6 +193,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-service.wahoo
 
+# Permissions
+# NOTE: Used to deal with permission issues caused by Gapps updates
+PRODUCT_COPY_FILES += \
+    device/google/wahoo/permissions/pixel_permissions_product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/pixel_permissions_product.xml
+
 # Radio Hal
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.1.vendor \
