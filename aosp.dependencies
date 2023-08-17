@@ -4,7 +4,7 @@
      "target_path": "kernel/google/wahoo"
    },
    {
-     "repository": "PixelBoot/packages_apps_GoogleCamera",
+     "repository": "asriadirahim/packages_apps_googlecamera",
      "target_path": "packages/apps/GoogleCamera",
      "branch": "thirteen",
      "remote": "gitlab"
